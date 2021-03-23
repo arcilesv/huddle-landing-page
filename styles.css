@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    background-color: var(--violet);
+    background-image: url(/images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    padding: 20px 30px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.logo img {
+    width: 40%;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left-container {
+    width: 100%;
+}
+
+.left-container img {
+    width: 100%;
+    height: auto;
+}
+
+.right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.right-container p {
+    opacity: 0.8;
+}
+
+.right-container .btn-register {
+    width: 20rem;
+    height: 5rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    box-shadow: 1px 1px 2px;
+    color: var(--violet);
+    border: none;
+    outline: none;
+}
+
+.right-container .btn-register:hover {
+    background-color: var(--magenta);
+}
+
+.social-container ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.social-container ul li {
+    list-style: none;
+}
+
+.social-container ul li a i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+@media (min-width:900px){
+    body {
+        background-image: url(/images/bg-desktop.svg);
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4rem;
+        margin: 2rem 0;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .right-container {
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .social-container ul {
+        justify-content: flex-end;
+    }
+}
